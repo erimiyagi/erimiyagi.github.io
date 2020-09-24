@@ -48,10 +48,6 @@ body{
     float: none;
 }
 
-main{
-
-}
-
 header, main, footer {
     margin: 0 auto;
     max-width: 80%;
