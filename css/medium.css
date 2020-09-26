@@ -3,6 +3,7 @@
 
 header img{
     float: right;
+    border-radius: 0.75em;
 }
 
 h1 {

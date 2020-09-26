@@ -11,7 +11,6 @@ header img {
     float: right;
     margin-right: 15px;
     margin-top: 60px;
-    border-radius: 5px;
     box-shadow:5px 5px  #F2F2F2;
 }
 
@@ -24,8 +23,8 @@ header{
 h1{
     background-color: #736C5F;
     color: #F2F2F2;
-    padding: 5px;
-    font-size: 1.5em;
+    padding: 10px;
+    font-size: 5.5em;
     font-family: 'Amatic SC', cursive;
     border-radius: 10px;
     text-align: center;
@@ -54,10 +53,14 @@ header, main, footer {
     max-width: 80%;
 }
 
+body a:link, body a:visited {
+    color: #F2F2F2;
+}
+
 
 footer{
     background-color: #736C5F;
-    color: #ffffff;
+    color: #F2F2F2;
     border-radius: 10px;
     text-align: center;
     padding: 5px;
@@ -66,6 +69,6 @@ footer{
 }
 
 #lastModified{
-    color: #BFAF7E;
+    color: #F2F2F2;
 }
 
