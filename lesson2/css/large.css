@@ -1,0 +1,25 @@
+@media only screen and (min-width:60em){
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+   
+}
+.ichi{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.ni{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.san{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+
+}
