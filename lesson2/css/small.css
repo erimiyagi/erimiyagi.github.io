@@ -16,10 +16,8 @@ html {
 
 body {
     max-width: 1000px;
-    
     background-color: var( --primary-color) ;
-    margin-right: auto;
-    margin-left : auto;         
+    margin: 0 auto;         
 }
 
 section h2{
@@ -42,14 +40,15 @@ header h2{
     color: var(--accent2-color);
 }
 
-
 main {
 	display: grid;
-    grid-template-columns: 1fr;
     padding: 0.8em;
-
+    grid-template-columns: 1fr;
+         
+    
 	
 }
+
 
 
 section {
