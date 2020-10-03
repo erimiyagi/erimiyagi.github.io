@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Secular+One&display=swap');
+
+:root{
+    --primary-color: #025940; 
+    --secondary-color: #80BF9B; 
+    --accent1-color: #594839; 
+    --accent2-color: #F2D1C9; 
+
+    --heading-font: 'Secular One', sans-serif;
+    --paragraph-font: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+html {
+    background-color: var( --accent2-color);
+}
+
+body {
+    max-width: 1000px;
+    background-color: white ;
+    margin: 0 auto;   
+    box-shadow: 0 2px 15px gray;
+
+      
+}
+
+
+
+nav{
+    background-color: var( --secondary-color) ;
+	text-align: center;
+    box-shadow: 0 2px 15px gray;
+    
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0.8rem;
+	text-decoration: none;
+    font-size: 1.1rem;
+    font-family: var(--paragraph-font);
+}
+
+nav a:hover {
+    background-color: var( --secondary-color) ;
+
+	color: var( --primary-color);
+}
+
+main{
+    margin: 1%;
+}
+
+
+
+section h2{
+    color: var(--secondary-color);
+}
+
+
+h1{
+    font-family: 'Fredoka One', cursive;
+    color: var(--primary-color);
+    font-size: 3em;
+}
+
+h2{
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    font-size:2em;
+}
+
+h3{
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    font-size:1.5em;
+
+
+
+}
+
+p{
+    font-family: var(--paragraph-font);
+    font-size:1em;
+
+
+}
+
+header h2{
+    font-size: 1.5em;
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+    margin-top: -2%;
+    margin-bottom: 5%;
+}
+
+.hh2{
+    color: var(--accent2-color);
+
+}
+
+
+h2 a{
+    color: black;
+}
+
+.lnk {
+    color: black;
+}
+
+ img {
+    width:30%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main {
+	display: grid;
+    padding: 0.8em;
+    grid-template-columns: 1fr;
+         
+    
+	
+}
+
+
+
+
+
+
+header{
+    background-color: white; 
+    padding: 0.3em;
+    text-align: center;
+    font-family: var(--paragraph-font);
+
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 1%;
+}
+
+th{
+    background-color: var(--accent2-color);
+    color: white;
+}
+td {
+    height: 50px;
+    text-align: center;
+    font-family: var(--paragraph-font);
+
+}
+
+
+footer{
+    background-color: var( --secondary-color) ;
+    padding: 0.3em;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+
+
+.lnk a:link, .lnk a:visited {
+    color: black;
+}
+
+footer a:link, footer a:visited {
+    color: white;
+}
+
+li{
+    font-family: var(--paragraph-font) ;
+}
+
+th{
+    font-family: var(--paragraph-font) ;
+
+}
+
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	/* Horizontal Menu Examples */
+	/* Flex *********************/
+	/*	nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }
+	*/
+
+	/* Grid *********************/
+			nav ul { 
+				display: flex;
+				/*grid-template-columns: repeat(5, 1fr);*/
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                padding: 1%;
+                
+                
+            }
+            
+            nav ul li { flex: 1 1 100%; }
+
+	/* Inline-Block             */
+	/*
+			nav li {display: inline-block;}
+	*/
+
+	/* Float                    */
+	/*
+			nav li {float:left; margin-right:15px;}
+			main {clear:both;}
+	*/
+
+/*******************************************************/
+	
+	nav a {
+		font-size: 1rem;
+	}
+	
+	
+	
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
