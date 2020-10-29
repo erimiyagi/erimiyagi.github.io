@@ -27,6 +27,12 @@ body {
       
 }
 
+.headerlogo{
+    width: 30%;
+    float: left;
+    margin-top: 3%;
+    display: none;
+}
 
 
 nav{
@@ -73,6 +79,7 @@ h1{
     font-family: 'Fredoka One', cursive;
     color: var(--primary-color);
     font-size: 3em;
+    
 }
 
 h2{
