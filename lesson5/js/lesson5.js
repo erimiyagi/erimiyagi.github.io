@@ -13,4 +13,12 @@ function updateBox(){
 
 document.getElementById('lastModified').innerHTML = `Last Updated: ${document.lastModified}`;
 
+WebFont.load({
+    google: {
+      families: [
+         'fontfamilynameofyourchoice'
+      ]
+    }
+  });
+
 
