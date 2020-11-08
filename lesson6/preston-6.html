@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Makes the Day</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/lesson6/css/lesson5.css">
+    <link rel="stylesheet" href="/lesson6/css/small.css">
+    <link rel="stylesheet" href="/lesson6/css/medium.css">
+    <link rel="stylesheet" href="/lesson6/css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+
+<div id="bannerTop">
+    <script id="bannerTop">
+        var weeks	= new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+        var today	= new Date();				//	日付オブジェクト取得
+        var week	= weeks[today.getDay()];	//	曜日取得
+        var string	= '';						//	文言格納用変数
+        
+        switch(week) {
+            case 'Fri':
+                string = 'Preston Pancakes in the Park!  </br> 9:00 a.m. Saturday at the city park pavilion.';
+                break;	
+        }
+        document.write( string );
+    </script>
+    </div>
+    <header>
+        <div class="headerlogo">
+        <img src="/lesson6/images/weather-png-hd-weather-png-transparent-480_480.png" alt="logo"></div>
+        </div>
+        <h1>Weather Makes the Day</h1>
+        <h2>We provide the weather news for your day</h2>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="active">
+                <a href="#">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Spring</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="#">Storm Center</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+<main>
+    <h1>Preston Idaho</h1>
+    <div class="herodiv">
+        
+        <div class="hero-image">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/sample-image-500px.jpg">
+                <source media="(max-width: 800px)" srcset="images/sample-image-800px.jpg">
+                <img src="images/sample-image-1100px.jpg" alt="hero-image">
+
+            </picture>
+        </div>
+
+        <section class="summary">
+            <h2>Weather Summary</h2>
+            <p>Currently: <span id="now">Sunny</span></p>
+            <p>High: <span id="high">76°F</span></p>
+            <p>Wind Chill: <span id="wind">°F</span></p>
+            <p>Humidity: <span id="wind">69%</span></p>
+            <p>Wind Speed: <span id="wind">5 mph</span></p>
+        </section>
+    </div>
+
+    <div class="ph-forecast">
+        <h2>5 Days Forecast</h3>
+        <section class="forecast">
+            <div class="day-table">
+                <span class="mon">MON</span>
+                <img src="/lesson6/images/icons8-sun-80.png" alt="sunny">
+                <p>80°F</p>
+            </div> 
+            <div class="day-table">
+                <span class="tue">TUE</span>
+                <img src="/lesson6/images/icons8-rainy-weather-80.png" alt="sunny">
+                <p>75°F</p>
+            </div> 
+            <div class="day-table">
+                <span class="wed">WED</span>
+                <img src="/lesson6/images/icons8-sun-80.png" alt="sunny">
+                <p>83°F</p>
+            </div> 
+            <div class="day-table">
+                <span class="thu">THU</span>
+                <img src="/lesson6/images/icons8-haze-80.png" alt="sunny">
+                <p>74°F</p>
+            </div> 
+            <div class="day-table">
+                <span class="fri">FRI</span>
+                <img src="/lesson6/images/icons8-sun-80.png" alt="sunny">
+                <p>78°F</p>
+            </div> 
+        </section>
+    </div>
+    
+    <article>
+        <div class="ph-article">
+            <h2>Article</h2>
+            <div class="article">
+                <div class="article-img">
+                    <img src="/lesson6/images/AdobeStock_256695675.jpeg" alt="preston bridge">
+                
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>  
+        </div> 
+    </article>
+
+    <div class="ph-contact">
+        <h2>Contact Information</h2>
+
+        <table class="tbl-r02">
+            <tr>
+                <th><div class="map">
+                    <img src="/lesson6/images/1665260_ID_Preston.png" alt="map-preston">
+                </div></th>
+                <td class="last">
+                    <div class="information">
+                        <div class="location">
+                        <img src="/lesson6/images/icons8-location-30.png" alt="map icon">
+                        <p>30 N 1st E </br> Preston, ID 83263</p>
+                        </div>
+                        
+                        <div class="call">
+                        <img src="/lesson6/images/icons8-call-30.png" alt="call icon">
+                        <p>(123)456-7890</p>
+                        </div>
+                       
+                        <div class="email">
+                        <img src="/lesson6/images/icons8-envelope-30.png" alt="email icon">
+                        <p>info@wmtd.com</p>
+                        </div>
+                     </div>
+                     <div class="sns">
+                         <img src="/lesson6/images/icons8-instagram-30.png" alt="insta icon">
+                         <img src="/lesson6/images/icons8-facebook-30.png" alt="facebook icon">
+                         <img src="/lesson6/images/icons8-twitter-30.png" alt="twitter icon">
+                     </div></td>
+                     
+              
+          </table>
+        
+    </div> 
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+</body>
+
+<footer>
+    <p> &copy; 2020 | Eri Miyagi | Tokyo | 
+    <a href="https://www.byui.edu/online">BYU Online Learning</a>
+    </p>
+    <div id="lastModified"></div>
+</footer>
+     <script src="js/lesson6.js"></script>
+</footer>
+</html>
