@@ -21,7 +21,7 @@ html {
 body {
     max-width: 1000px;
     background-color: white ;
-    margin: 0 auto;   
+    margin: auto !important;   
     box-shadow: 0 2px 15px gray;
 
       
