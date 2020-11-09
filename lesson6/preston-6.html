@@ -18,7 +18,7 @@
   
 
 <div id="bannerTop">
-    <script id="bannerTop">
+    <script id="bTop">
         var weeks	= new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
         var today	= new Date();				//	日付オブジェクト取得
         var week	= weeks[today.getDay()];	//	曜日取得
@@ -35,7 +35,7 @@
     <header>
         <div class="headerlogo">
         <img src="/lesson6/images/weather-png-hd-weather-png-transparent-480_480.png" alt="logo"></div>
-        </div>
+       
         <h1>Weather Makes the Day</h1>
         <h2>We provide the weather news for your day</h2>
     </header>
@@ -88,8 +88,9 @@
     </div>
 
     <div class="ph-forecast">
-        <h2>5 Days Forecast</h3>
+        
         <section class="forecast">
+            <h2>5 Days Forecast</h2>
             <div class="day-table">
                 <span class="mon">MON</span>
                 <img src="/lesson6/images/icons8-sun-80.png" alt="sunny">
@@ -148,7 +149,7 @@
                     <div class="information">
                         <div class="location">
                         <img src="/lesson6/images/icons8-location-30.png" alt="map icon">
-                        <p>30 N 1st E </br> Preston, ID 83263</p>
+                        <p>30 N 1st E <br> Preston, ID 83263</p>
                         </div>
                         
                         <div class="call">
@@ -176,14 +177,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
-</body>
-
 <footer>
     <p> &copy; 2020 | Eri Miyagi | Tokyo | 
     <a href="https://www.byui.edu/online">BYU Online Learning</a>
     </p>
     <div id="lastModified"></div>
-</footer>
+
      <script src="js/lesson6.js"></script>
 </footer>
+
+</body>
+
+
 </html>
