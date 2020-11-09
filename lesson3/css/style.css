@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Secular+One&display=swap');
 
 :root{
-    --primary-color: #025940; 
-    --secondary-color: #80BF9B; 
+    --primary-color: #DBC2A9; 
+    --secondary-color: #E6B6B0; 
     --accent1-color: #594839; 
-    --accent2-color: #F2D1C9; 
+    --accent2-color: #F9F0F0; 
 
     --heading-font: 'Secular One', sans-serif;
     --paragraph-font: 'Source Sans Pro', sans-serif;
