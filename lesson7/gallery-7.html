@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Makes the Day</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/lesson6/css/lesson5.css">
+    <link rel="stylesheet" href="/lesson7/css/small.css">
+    <link rel="stylesheet" href="/lesson7/css/medium.css">
+    <link rel="stylesheet" href="/lesson7/css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body data-new-gr-c-s-check-loaded="14.983.0">
+  
+
+<div id="bannerTop">
+    <script id="bTop">
+        var weeks	= new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+        var today	= new Date();				//	日付オブジェクト取得
+        var week	= weeks[today.getDay()];	//	曜日取得
+        var string	= '';						//	文言格納用変数
+        
+        switch(week) {
+            case 'Fri':
+                string = 'Preston Pancakes in the Park!  </br> 9:00 a.m. Saturday at the city park pavilion.';
+                break;	
+        }
+        document.write( string );
+    </script>
+    </div>
+    <header>
+        <div class="headerlogo">
+        <img src="/lesson6/images/weather-png-hd-weather-png-transparent-480_480.png" alt="logo"></div>
+       
+        <h1>Weather Makes the Day</h1>
+        <h2>We provide the weather news for your day</h2>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="active">
+                <a href="/lesson6/preston-6.html">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Spring</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="#">Storm Center</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+<main>
+    <h2>Weather Gallery</h2>
+    <div class="gallery-grid">
+    <figure class="gallery">
+        <picture>
+            <img src="/lesson7/images/gallery-1.jpg" alt="cloudy day">
+            <figcaption>Cloudy day</figcaption>
+        </picture>
+    </figure>
+    <figure class="gallery">
+        <picture>
+            <img src="/lesson7/images/gallery-2.jpg" alt="Thunder in a night">
+            <figcaption>Thunder in a night</figcaption>
+        </picture>
+    </figure>
+    <figure class="gallery">
+        <picture>
+            <img src="/lesson7/images/gallery-3.jpg" alt="Snow by the bridge">
+            <figcaption>Snow by the bridge</figcaption>
+        </picture>
+    </figure>
+    <figure class="gallery">
+        <picture>
+            <img src="/lesson7/images/gallery-4.jpg" alt="Rainbow in the sky">
+            <figcaption>Rainbow in the sky</figcaption>
+        </picture>
+    </figure>
+    <figure class="gallery">
+        <picture>
+            <img src="/lesson7/images/gallery-5.jpg" alt="Snow in the street">
+            <figcaption>Snow in the street</figcaption>
+        </picture>
+    </figure>
+    <figure class="gallery">
+        <picture>
+            <img src="/lesson7/images/gallery-6.jpg" alt="Sunny day with cloud">
+            <figcaption>Sunny day with cloud</figcaption>
+        </picture>
+    </figure>
+    <figure class="gallery">
+        <picture>
+            <img src="/lesson7/images/gallery-7.jpg" alt="Beautidul moon">
+            <figcaption>Beautidul moon</figcaption>
+        </picture>
+    </figure>
+    <figure class="gallery">
+        <picture>
+            <img src="/lesson7/images/gallery-8.jpg" alt="Beautidul sunlight">
+            <figcaption>Beautidul sunlight</figcaption>
+        </picture>
+    </figure>
+    <figure class="gallery">
+        <picture>
+            <img src="/lesson7/images/gallery-9.jpg" alt="Big rainbow in the cloud">
+            <figcaption>Big rainbow in the cloud</figcaption>
+        </picture>
+    </figure>
+    </div>
+
+   
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+<footer>
+    <p> &copy; 2020 | Eri Miyagi | Tokyo | 
+    <a href="https://www.byui.edu/online">BYU Online Learning</a>
+    </p>
+    <div id="lastModified"></div>
+
+     <script src="js/lesson7.js"></script>
+</footer>
+
+</body>
+
+
+</html>

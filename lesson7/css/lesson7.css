@@ -20,5 +20,5 @@ picture img {
 }
 
 picture img[data-src] {
-    filter: blur(.3em);
+    filter: blur(.05em);
 }

@@ -1,0 +1,104 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav{
+        padding: 1%;
+    }
+
+    nav button{
+        display:none;
+    }
+
+    nav ul.hide{
+        display: block;
+    }
+    nav ul{
+        margin-left: 2%;
+        
+    }
+
+    nav ul li{
+       
+       float: left;
+    }
+
+    nav ul li a{
+        border: none;
+        padding:.6rem 2.3rem;
+        
+    }
+
+    h1{
+        font-size: 2em;
+        padding-left: 2% ;
+    }
+
+    header h1{
+        font-family: 'Fredoka One', cursive;
+        color:var(--secondary-color);
+        font-size: 3em;
+        padding: 0 ;
+
+        
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    .herodiv img{
+        width: 100%;
+        background-size: cover;
+        min-height: 300px;
+        
+    }
+
+    .article{
+        border: 1px solid var(--accent1-color);
+        padding: 2%;
+        min-height: 230px;
+        
+    }
+
+    .article-img img{
+        float: right;
+        width: 20%;
+    }
+
+    /*contact information*/
+    .sns {
+        width: 50%;
+        
+    }
+
+
+    /*gallery*/
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        
+    }
+
+    figure.gallery{
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+
+    figure.gallery:hover{
+    -webkit-transform:scale(1.1); 
+    -moz-transform:scale(1.1); 
+    -o-transform:scale(1.1); 
+    box-shadow:0px 0px 30px var(--accent1-color); 
+    -webkit-box-shadow:0px 0px 30px gray; 
+    -moz-box-shadow:0px 0px 30px gray; 
+    opacity: 1;
+    }
+    
+
+
+
+} /*end large */
