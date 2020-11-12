@@ -82,6 +82,19 @@ nav a:active{
     
 }
 
+.activePreston a{
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+.activeGallery a{
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+.activeGallery a{
+    color: var(--accent1-color);
+}
 
 
 section h2{
