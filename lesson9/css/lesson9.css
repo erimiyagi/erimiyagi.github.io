@@ -1,0 +1,549 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Secular+One&display=swap');
+
+:root{
+    --primary-color: #DBC2A9; 
+    --secondary-color: #E6B6B0; 
+    --accent1-color: #594839; 
+    --accent2-color: #F9F0F0; 
+
+    --heading-font: 'Secular One', sans-serif;
+    --paragraph-font: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    background-color: var( --accent2-color);
+    margin: 0 auto;   
+}
+
+body {
+    max-width: 1000px;
+    background-color: white ;
+    margin: 0 auto;       
+}
+
+main {
+	display: grid;
+    padding: 0.8em;
+    grid-template-columns: 1fr;
+    padding: 1%;
+
+}
+
+.headerlogo{
+    width: 30%;
+    float: left;
+    margin-top: 3%;
+    display: none;
+}
+
+
+nav{
+    background-color: var( --primary-color) ;
+	text-align: center;
+    box-shadow: 0 1px 5px gray;
+    
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0.8rem;
+	text-decoration: none;
+    font-size: 1.3rem;
+    font-family: var(--paragraph-font);
+}
+
+nav a:hover {
+    color: var( --accent1-color);
+    
+}
+
+nav a:active{
+    background-color: var(--accent1-color);
+    color: white;
+    
+}
+
+.activePreston a{
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+.activeGallery a{
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+.activeForm a{
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+.activeHome a{
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+
+
+section h2{
+    color: var(--secondary-color);
+}
+
+h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1em;
+    color:var(--accent1-color);
+
+
+}
+
+header h1{
+    font-family: 'Fredoka One', cursive;
+    color:var(--secondary-color);
+    font-size: 3em;
+    
+}
+
+h2{
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    font-size: 2em;
+    padding: 1%;
+    padding-left:2%;
+}
+
+h3{
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    font-size:1.5em;
+
+
+
+}
+
+p{
+    font-family: var(--paragraph-font);
+    font-size:1em;
+
+
+}
+
+header h2{
+    font-size: 1.5em;
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    margin-top: -2%;
+    margin-bottom: 3%;
+}
+
+.h2{
+    color: var(--accent2-color);
+
+}
+
+
+h2 a{
+    color: black;
+}
+
+.lnk {
+    color: black;
+}
+
+ img {
+    width:30%;
+    margin: 0;
+    padding: 0;
+}
+/*banner*/
+#bannerTop{
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+    padding: 2%;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: var(--paragraph-font);
+    
+
+}
+header{
+    background-color:white; 
+    padding: 0.2em;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    
+
+}
+
+/*hero image and summary*/
+.herodiv {
+    
+    position: relative;
+    text-align: center;
+    padding: 0 2% 0 2%;
+}
+.herodiv h1, h2, p {
+    margin: 0;
+}
+
+.herodiv img{
+    
+    background-size: cover;
+    top: 5%;
+
+    
+}
+
+.hero-image{
+    width: 100%;
+}
+
+.summary {
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	background: rgba(255,255,255,.7);
+	padding: 1rem;
+}
+
+/*5days*/
+
+.ph-forecast{
+    padding: 2%;
+}
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+}
+
+.day-table {
+    padding: 0;
+    font-family: var(--paragraph-font);
+    text-align: center;
+    border: 1px solid var(--accent1-color);
+}
+
+.mon, .tue, .wed, .thu, .fri {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    background:var(--primary-color);
+    color: white;
+    border-bottom: 1px solid var(--accent1-color);
+    font-weight: 800;
+}
+
+/*article*/
+.ph-article{
+    padding: 2%;
+}
+
+.article{
+    border: 1px solid var(--accent1-color);
+    padding: 2%;
+    min-height: 230px;
+    
+}
+
+.article-img img{
+    float: right;
+    min-width: 30%;
+}
+
+/*contact information*/
+.ph-contact{
+    background-color: var(--accent2-color);
+    margin:5% 2%;
+    
+}
+
+.ph-contact table{
+    border: none;
+}
+
+.ph-contact h2{
+    padding: 3% 0 2% 2%;
+    
+}
+
+
+
+.map img{
+    width: 200px;
+    max-width: 200px;;
+    padding-left: 2%;
+    margin: 0 auto;
+ 
+   
+}
+.information img{
+   
+    max-width: 25px;;
+}
+
+
+.information{
+    display: inline-block;
+    margin: 0 auto;
+
+
+}
+   
+
+.information p{
+    display: inline-block;
+}
+
+.sns{
+    margin: 0 auto;
+}
+
+.sns img{
+    width: 20%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    padding: 1%;
+}
+
+th{
+    color: white;
+}
+td {
+    height: 50px;
+    text-align: center;
+    font-family: var(--paragraph-font);
+
+}
+
+
+footer{
+    background-color: var( --primary-color) ;
+    padding: 0.3em;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+
+
+.lnk a:link, .lnk a:visited {
+    color: black;
+}
+
+footer a:link, footer a:visited {
+    color: white;
+}
+
+li{
+    font-family: var(--paragraph-font) ;
+}
+
+
+.contentbox{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #ccc;
+    color: #444;
+    font-family: var(--paragraph-font);
+    
+
+}
+/* -----FORM------ */
+form fieldset{
+    margin: 2rem 0;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+
+}
+form legend{
+    color: var(--accent1-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+
+}
+form label.top, form{
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent1-color);
+    font-size: 1rem;
+    font-family: var(--paragraph-font);
+}
+
+form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 20rem;
+    background: var(--accent2-color);
+}
+
+form label.sbs{
+    display: block;
+    padding: .5rem;
+    color: var(--accent1-color);
+}
+
+form input.submitBtn{
+    border: none;
+    background: var(--accent1-color);
+    color: white;
+    padding: 1rem 2rem ;
+    border-radius: 20px;
+    margin: 0 0 2rem 1%;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 1.3em;
+    
+}
+
+form label.top input:required{
+    border-left: 7px solid var(--secondary-color);
+}
+
+form label.top input:required:valid{
+    border-left: 7px solid var(--accent1-color);
+}
+
+
+
+form textarea{
+    width:100%;
+    padding:2%;
+    
+    
+}
+
+/* -----THANKS PAGE----- */
+.thanks p{
+    color: var(--accent1-color);
+    padding:1rem;
+    
+}
+.thanks{
+    text-align: center;
+    margin: 3rem;;
+}
+
+/*wireframe*/
+.wireframe a{
+    margin-left: 2%;
+}
+
+.wireframe{
+    margin-bottom: 30px;
+}
+
+/*AREA INFORMATION*/
+.cards{
+ 
+    gap: 1em;
+    margin: 20px 1% 0 0;
+    background-color: var(--accent1-color);
+    padding: 1%;
+
+}
+
+.card{
+    padding: 2%;
+    background-color: white;
+
+}
+
+.card h3{
+    color: var(--secondary-color);
+}
+
+.card h4{
+    font-weight: 700;
+    font-family: var(--paragraph-font);
+}
+
+.areainfo h2{
+    margin-top: 4%;
+}
+
+
+
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	/* Horizontal Menu Examples */
+	/* Flex *********************/
+	/*	nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }
+	*/
+
+	/* Grid *********************/
+			nav ul { 
+				display: flex;
+				/*grid-template-columns: repeat(5, 1fr);*/
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                padding: 1%;
+                
+                
+            }
+            
+            nav ul li { flex: 1 1 100%; }
+
+	/* Inline-Block             */
+	/*
+			nav li {display: inline-block;}
+	*/
+
+	/* Float                    */
+	/*
+			nav li {float:left; margin-right:15px;}
+			main {clear:both;}
+	*/
+
+/*******************************************************/
+	
+	nav a {
+		font-size: 1rem;
+	}
+	
+	
+	
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+

@@ -11,33 +11,23 @@
     --paragraph-font: 'Source Sans Pro', sans-serif;
 }
 
-
-
-
 html {
     background-color: var( --accent2-color);
     margin: 0 auto;   
-
 }
 
 body {
     max-width: 1000px;
     background-color: white ;
-    margin: 0 auto;   
- 
-
-      
+    margin: 0 auto;       
 }
-
 
 main {
 	display: grid;
     padding: 0.8em;
     grid-template-columns: 1fr;
     padding: 1%;
-         
-    
-	
+
 }
 
 .headerlogo{
