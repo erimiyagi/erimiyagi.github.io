@@ -1,0 +1,114 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav{
+        padding: 1%;
+    }
+
+    nav button{
+        display:none;
+    }
+
+    nav ul.hide{
+        display: block;
+    }
+    nav ul{
+        margin-left: 2%;
+        
+    }
+
+    nav ul li{
+       
+       float: left;
+    }
+
+    nav ul li a{
+        border: none;
+        padding:.6rem 2.3rem;
+        
+    }
+
+    h1{
+        font-size: 2em;
+        padding-left: 2% ;
+    }
+
+    header h1{
+        font-family: 'Fredoka One', cursive;
+        color:var(--secondary-color);
+        font-size: 3em;
+        padding: 0 ;
+
+        
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    .herodiv img{
+        background-size: cover;
+        
+    }
+
+    .summary {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        background: rgba(255,255,255,.7);
+        padding: 1rem;
+    }
+
+    .article{
+        border: 1px solid var(--accent1-color);
+        padding: 2%;
+        min-height: 230px;
+        
+    }
+
+    .article-img img{
+        float: right;
+        width: 20%;
+    }
+
+
+    .map img{
+        width: 200px;
+        max-width: 200px;;
+        padding-left: 2%;
+        margin: 0 auto;
+     
+       
+    }
+    .information img{
+       
+        max-width: 25px;;
+    }
+
+    /*contact information*/
+    .sns {
+        width: 50%;
+        
+    }
+
+/*AREA INFORMATION*/
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5em;
+    margin: 2%;
+    background-color: var(--accent1-color);
+    padding: 1%;
+
+}
+
+.card{
+    display: block;
+}
+
+.card h3{
+    padding: 2%;
+}
+    
+
+} /*end large */

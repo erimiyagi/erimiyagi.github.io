@@ -1,0 +1,59 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    .herodiv img{
+        width: 100%;
+        background-size: cover;
+    }
+
+    .summary {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        background: rgba(255,255,255,.7);
+        padding: 1rem;
+    }
+
+ h1{
+    padding-left: 2% ;
+
+ }
+
+ .article{
+    border: 1px solid var(--accent1-color);
+    padding: 2%;
+    min-height: 230px;
+    
+}
+ 
+
+.article-img img{
+    float: right;
+    width: 30%;
+}
+/*contact information*/
+.sns {
+    width: 60%;
+   
+}
+.sns img{
+    width: 100px;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card:nth-child(even) .cardData {
+    grid-column: 2;
+}
+.card:nth-child(even) img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+} /*end medium */
+
+
+
