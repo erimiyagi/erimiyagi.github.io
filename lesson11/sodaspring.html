@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Makes the Day</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/lesson11/css/lesson10.css">
+    <link rel="stylesheet" href="/lesson11/css/small.css">
+    <link rel="stylesheet" href="/lesson11/css/medium.css">
+    <link rel="stylesheet" href="/lesson11/css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+
+<div id="bannerTop">
+    <script id="bTop">
+        var weeks	= new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+        var today	= new Date();				//	日付オブジェクト取得
+        var week	= weeks[today.getDay()];	//	曜日取得
+        var string	= '';						//	文言格納用変数
+        
+        switch(week) {
+            case 'Fri':
+                string = 'Preston Pancakes in the Park!  </br> 9:00 a.m. Saturday at the city park pavilion.';
+                break;	
+        }
+        document.write( string );
+    </script>
+    </div>
+    <header>
+        <div class="headerlogo">
+        <img src="/lesson6/images/weather-png-hd-weather-png-transparent-480_480.png" alt="logo"></div>
+       
+        <h1>Weather Makes the Day</h1>
+        <h2>We provide the weather news for your day</h2>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li>
+                <a href="/lesson9/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/lesson11/preston10.html">Preston</a>
+            </li>
+            <li class="activeB">
+                <a href="#">Soda Springs</a>
+            </li>
+            <li>
+                <a href="/lesson11/fishhaven.html">Fish Haven</a>
+            </li>
+            <li>
+                <a href="/lesson8/stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="/lesson7/gallery-7.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+<main>
+    <h1>Soda Springs</h1>
+    <div class="herodiv">
+        
+        <div class="hero-image">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/sodaspring_500.jpg">
+                <source media="(max-width: 800px)" srcset="images/sodaspring_800.jpg">
+                <img src="images/sodaspring_1100.jpg" alt="hero-image">
+
+            </picture>
+        </div>
+
+        <section class="summary">
+            <h2>Weather Summary</h2>
+            <p>Currently: <span id="current"></span>
+            <p>High: <span id="temp"></span>&deg; F</p>
+            <p>Wind Chill: <span id="windChill">°F</span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="speed"></span>mph</p>
+        </section>
+    </div>
+
+    <div class="ph-forecast">
+    
+        <h2>5 Days Forecast</h2>
+        <div class="forecast">
+            <div class="day-table">
+                <span class="mon" id="day1"></span>
+                <div class="forecastTable">
+                    <img src="" alt="" id="icon1">
+                    <p id="forecastDay1"> </p>
+                </div>
+                
+            </div> 
+            <div class="day-table">
+                <span class="tue" id="day2"></span>
+                <div class="forecastTable">
+                    <img src="" alt="" id="icon2">
+                    <p id="forecastDay2"></p> 
+                </div>
+            </div> 
+            <div class="day-table">
+                <span class="wed" id="day3"></span>
+                <div class="forecastTable">
+                    <img src="" alt="" id="icon3">
+                    <p id="forecastDay3"></p> 
+                </div>               
+            </div> 
+            <div class="day-table">
+                <span class="thu" id="day4"></span>
+                <div class="forecastTable">
+                    <img src="" alt="" id="icon4">
+                    <p id="forecastDay4"></p>    
+                </div>            
+            </div> 
+            <div class="day-table">
+                <span class="fri" id="day5"></span>
+                <div class="forecastTable">
+                    <img src="" alt="" id="icon5">
+                    <p id="forecastDay5"></p>   
+                </div>             
+            </div> 
+            
+        </div>
+    </div>
+    
+    <div class="ph-event">
+        <h2>Upcoming Events</h2>
+        <div class="towns"></div>
+
+    </div>
+    <article>
+        <div class="ph-article">
+            <h2>Soda Springs Information</h2>
+            <div class="article">
+                <div class="article-img">
+                    <img src="/lesson11/images/sodaspring-article.jpg" alt="soda springs snow">
+                    <p>Soda Springs is a community rich in history and overflowing with the potential for growth and expansion. It has the safety, friendliness and support of a small town while also offering a prime location for industry, agriculture and business. Soda Springs features five beautiful parks that offer playgrounds, pavilions, hiking, biking and cross country ski trails surrounded in nature, as well as an 18-hole disc golf course. Within 5 to 20 minutes of Soda Springs is access to swimming, fishing, boating, snow machining, camping, ATV trails, bird watching and hunting. <a href="https://www.sodaspringsid.com/">Visit here for more information </a></p>
+                
+
+                </div>
+            </div>  
+        </div> 
+    </article>
+
+    <div class="ph-contact">
+        <h2>Contact Information</h2>
+
+        <table class="tbl-r02">
+            <tr>
+                <th><div class="map">
+                    <img src="/lesson6/images/1665260_ID_Preston.png" alt="map-preston">
+                </div></th>
+                <td class="last">
+                    <div class="information">
+                        <div class="location">
+                        <img src="/lesson6/images/icons8-location-30.png" alt="map icon">
+                        <p>30 N 1st E <br> Preston, ID 83263</p>
+                        </div>
+                        
+                        <div class="call">
+                        <img src="/lesson6/images/icons8-call-30.png" alt="call icon">
+                        <p>(123)456-7890</p>
+                        </div>
+                       
+                        <div class="email">
+                        <img src="/lesson6/images/icons8-envelope-30.png" alt="email icon">
+                        <p>info@wmtd.com</p>
+                        </div>
+                     </div>
+                     <div class="sns">
+                         <img src="/lesson6/images/icons8-instagram-30.png" alt="insta icon">
+                         <img src="/lesson6/images/icons8-facebook-30.png" alt="facebook icon">
+                         <img src="/lesson6/images/icons8-twitter-30.png" alt="twitter icon">
+                     </div></td>
+                     
+              
+          </table>
+        
+    </div> 
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+<footer>
+    <p> &copy; 2020 | Eri Miyagi | Tokyo | 
+    <a href="https://www.byui.edu/online">BYU Online Learning</a>
+    </p>
+    <div id="lastModified"></div>
+
+     <script src="js/lesson10.js"></script>
+     <script src="js/weatherS.js"></script>
+
+
+
+</footer>
+
+</body>
+
+
+</html>
