@@ -2,9 +2,14 @@
 @media only screen and (min-width: 64rem) {
 
     nav{
-        padding: 3%;
+        padding: 2% 0;
+        margin: 0
     }
 
+    nav.clearfix{
+        margin:0;
+        padding: 2% 0 0 0;
+    }
     nav button{
         display:none;
     }
@@ -14,10 +19,7 @@
     nav ul.hide{
         display: block;
     }
-    nav ul{
-        margin-left: 2%;
-        
-    }
+   
 
     nav ul li{
        
@@ -112,6 +114,24 @@
         margin: 0 auto;
         
     }
+
+
+    /*rental page*/
+    .prices img{
+        width: 40%;
+    }
+
+    .card {
+        height: 350px;
+        margin: 10px ;
+    }
+
+
+    /*tours page*/
+
+.dolphin p{
+    font-size: 1.2em;
+}
 
 /*AREA INFORMATION*/
 .cards{

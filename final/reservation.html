@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour List of Cozumel</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/final/css/final.css">
+    <link rel="stylesheet" href="/final/css/small.css">
+    <link rel="stylesheet" href="/final/css/medium.css">
+    <link rel="stylesheet" href="/final/css/large.css">
+    <link rel="stylesheet" href="/final/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+    <header>
+        <div class="headerlogo">
+        <img src="/final/images/scoot-logo.png" alt="logo"></div>
+       
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li>
+                    <a href="/final/index.html">home</a>
+                </li>
+                <li>
+                    <a href="/final/rentals.html">rentals</a>
+                </li>
+                <li  class="activeB">
+                    <a href="#">reservation</a>
+                </li>
+                <li>
+                    <a href="/final/tours.html">tours</a>
+                </li>
+                <li>
+                    <a href="/final/contact.html">contact</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    
+
+<main>
+
+
+    <h2>Reservation</h2>
+    <form action="thanks.html">
+        <fieldset>
+            <legend>Contact Inforamtion</legend>
+            <label class="top">Full Name*
+                <input type="text" name="fullName" pattern="[a-zA-Z].{5,}" required>
+            </label>
+            <label class="top">Email*
+                <input type="email" name="email" placeholder="someone@email.com" required>
+            </label>
+            <label class="top">Phone Number*
+                <input type="tel" name="tel" placeholder="1234567890" required>
+            </label>
+            <label class="top">Zip Code*
+                <input type="number" name="zipcode" required>
+            </label> 
+            <label class="top">Mailing Address*
+                <input type="text" name="mailingAddress" pattern="[a-zA-Z0-9-].{5,}" required>
+            </label> 
+        </fieldset>
+        <fieldset>
+            <legend>Reservation Information</legend>
+            <label class="sbs">Reservation Date:
+                <input type="date" name="reserveDate">
+            </label>
+           
+            <label class="sbs">Scoot Type:
+               <select name="scootType">
+                   <option value>Select a Scoot Type...</option>
+                   <option value="Honda Metro">Honda Metro</option>
+                   <option value="Honda Dio">Honda Dio</option>
+                   <option value="Honda PCX150">Honda PCX150</option>
+                   <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                   <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                   <option value="Jeep Wrangler - 2 door">eep Wrangler - 2 door</option>
+               </select>
+            </label>
+            <label class="sbs">Number of Person:
+                <select name="numberPerson">
+                    <option value>Select a Number of Person...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    
+                </select>
+             </label>
+
+             <label class="top">Cruise Lines
+                <input type="text" name="cruiseLineName" pattern="[a-zA-Z].{5,}" placeholder="ex. The cruise line name if you are taking">
+            </label>
+            <label class="sbs">Agreement<br>
+                <ul>
+                    <li>Reservations rate requires 24 hour prior notification</li>
+                    <li>A $50 security deposit is required to confirm reservations</li>
+                    <li>A valid drivers license is required in hand at time of rental</li>
+                </ul>
+                
+
+                <input type="radio" name="dangerLevel" value="yes" required>
+                Agree
+            </label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+    
+            <label class="sbs">Payment Methods<br>
+            
+                <input type="radio" name="dangerLevel" value="yes" >
+                Credit or debit card<br>
+                <input type="radio" name="dangerLevel" value="yes" >
+                Google Pay<br>
+                <input type="radio" name="dangerLevel" value="yes" >
+                Paypal<br>
+                <input type="radio" name="dangerLevel" value="yes" >
+                Cash
+            </label>
+            <label class="top">Card Number
+                <input type="text" name="cardNumber" pattern="[0-9].{12,}" required>
+            </label>
+            <label class="top">Security Code
+                <input type="text" name="securityCode" pattern="[0-9].{3,}" required>
+            </label>
+
+
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Concerns or Comments</legend>
+            <label>
+                <textarea name="comment" placeholder="ex. The need and location of a drop-off request"></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Make a reservation" name="submitBtn" class="submitBtn">
+    </form>
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+<footer>
+    <p> &copy; 2020 | Eri Miyagi | Tokyo | 
+    <a href="https://www.byui.edu/online">BYU Online Learning</a>
+    </p>
+    <div id="lastModified"></div>
+
+     <script src="/final/js/final.js"></script>
+     <script src="/final/js/weather1.js"></script>
+
+</footer>
+
+</body>
+
+
+</html>

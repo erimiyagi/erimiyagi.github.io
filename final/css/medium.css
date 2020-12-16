@@ -39,16 +39,17 @@
 }
 
 
+
+
+
+
+/*rental page*/
+.prices img{
+    width: 70%;
+}
 .card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.card:nth-child(even) .cardData {
-    grid-column: 2;
-}
-.card:nth-child(even) img {
-    grid-column: 1;
-    grid-row: 1;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 } /*end medium */

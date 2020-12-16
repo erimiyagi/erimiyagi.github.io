@@ -177,6 +177,21 @@ footer{
     max-width: 80%;
 }
 
+/*rental page*/
+.prices img{
+    width: 35%;
+}
+
+.card {
+    height: 700px;
+    margin: 10px ;
+}
+
+/*tours page*/
+
+.dolphin p{
+    font-size: 1.5em;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
