@@ -24,7 +24,7 @@ WebFont.load({
 
   /*rental price*/
 
-  const requestURL = 'https://erimiyagi.github.io/mysite/final/rental.json';
+  const requestURL = 'https://erimiyagi.github.io/final/rental.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -34,28 +34,38 @@ fetch(requestURL)
     console.table(jsonObject);// temporary checking for valid response and data parsing
 
 
-        const prophets = jsonObject['prophets'];
-        for (let i = 0; i < prophets.length; i++) {
+        const rental = jsonObject['rental'];
+        for (let i = 0; i < rental.length; i++) {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
 
-        h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+        h2.textContent = rental[i].name;
 
         card.appendChild(h2);
-            document.querySelector('.cards').appendChild(card);
-            let dateBirth = document.createElement('p');
-            let placeBirth = document.createElement('p');
+            document.querySelector('.prices').appendChild(card);
+            let maxP = document.createElement('p');
+            let half = document.createElement('p');
+            let full = document.createElement('p');
+            let walkH = document.createElement('p');
+            let walkF = document.createElement('p');
             let image = document.createElement('img');
 
-            dateBirth.textContent = "Date of Birth: " + prophets[i].birthdate;
-            placeBirth.textContent = "Place of Birth: " + prophets[i].birthplace;
-            image.setAttribute('src', prophets[i].imageurl);
 
-            card.appendChild(dateBirth);
-            card.appendChild(placeBirth);
+            maxP.textContent = "Max Person: " + rental[i].max;
+            half.textContent = "Half Day (3 hrs): " + rental[i].half;
+            full.textContent = "Full Day: " + rental[i].full;
+            walkH.textContent = "Half Day: (3 hrs) " + rental[i].walkinHalf;
+            walkF.textContent = "Full Day: " + rental[i].walkinFull;
+            image.setAttribute('src', rental[i].imageurl);
+
+            card.appendChild(maxP);
+            card.appendChild(half);
+            card.appendChild(full);
+            card.appendChild(walkH);
+            card.appendChild(walkF);
             card.appendChild(image);
             card.setAttribute("class", "card")
-            document.querySelector('.cards').appendChild(card);
+            document.querySelector('.prices').appendChild(card);
         }
 
         
