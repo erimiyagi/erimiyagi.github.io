@@ -39,7 +39,7 @@ header img{
 
     
 }
-
+/*
 .clearfix .clearfix-menu a {
     position: relative;
   }
@@ -57,6 +57,9 @@ header img{
   .clearfix .clearfix-menu a:hover::after {
     width: 100%;
   }
+*/
+
+
 
 nav{
     text-align: center;
@@ -79,10 +82,14 @@ nav ul li a {
 	text-decoration: none;
     font-size: 1.3rem;
     font-family: var(--paragraph-font);
+    
 }
 
 nav a:hover {
     color: white;
+    background-color: var(--accent1-color);
+
+
     
 }
 

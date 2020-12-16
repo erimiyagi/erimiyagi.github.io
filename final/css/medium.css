@@ -1,6 +1,27 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
 
+    #primaryNav{
+        font-size: 1.5em;
+    }
+
+   
+    nav{
+        font-family: var(--paragraph-font);
+    }
+    
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    
+    
+    }
+
+    
+    
+    
+
     .herodiv img{
         width: 100%;
         background-size: cover;
@@ -21,6 +42,12 @@
     padding: 2%;
     min-height: 230px;
     
+ }
+ .clearfix ul li a{
+
+    font-size: 1.5em;
+    
+
  }
  
 /*rental summary*/
