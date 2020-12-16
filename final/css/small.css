@@ -94,14 +94,15 @@ p{
     font-size: 3em;;
 }
 
-.summary button{
+.summary input{
     margin: 3% 0 0 0;
     padding: 2% 3%;
     background-color: var(--primary-color);
     color: white;
     font-family: var(--paragraph-font);
-    font-size: 2em;
+    font-size: 2.5em;
     border-radius: 20px;
+    width: 40%;
    
 }
 
@@ -262,7 +263,7 @@ footer{
     font-size: 4em;
 }
 
-.dolphin button{
+.dolphin input{
     margin: 3% 0 1% 0;
     padding: 3% 4%;
     background-color: var(--primary-color);
