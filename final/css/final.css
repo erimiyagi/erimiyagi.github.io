@@ -43,12 +43,15 @@ header img{
 nav button{
     text-align: right;
     margin: auto;
+    transition: background-color 1s;
+    background-color: white;
 }
 
 nav{
     background-color: white;
     text-align: center;
     padding-left: 10%;
+    transition: background-color 1s;
     
 }
 
@@ -57,6 +60,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
     overflow: hidden;
+    transition: background-color 1s;
     
 }
 nav ul li a {
@@ -72,11 +76,7 @@ nav ul li a {
 nav a:hover {
     color: white;
     background-color: var(--secondary-color);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all  0.3s ease;
-
+    border-top: 3px var(--primary-color);
     
 }
 
