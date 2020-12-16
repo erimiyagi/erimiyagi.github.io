@@ -34,24 +34,33 @@ main {
 header img{
     max-width: 12%;
     float: left;
-    margin: 2% 3%;
+    margin: 1% 0;
     width: 10%
 
     
 }
 
-nav button{
-    text-align: right;
-    margin: auto;
-    transition: background-color 1s;
-    background-color: white;
-}
+.clearfix .clearfix-menu a {
+    position: relative;
+  }
+  .clearfix .clearfix-menu a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background:var(--primary-color);
+    transition: all .7s cubic-bezier(0.455, 0.03, 0.515, 0.555);
+  }
+  .clearfix .clearfix-menu a:hover::after {
+    width: 100%;
+  }
 
 nav{
-    background-color: white;
     text-align: center;
     padding-left: 10%;
-    transition: background-color 1s;
     
 }
 
@@ -60,7 +69,6 @@ nav ul {
 	margin: 0;
 	padding: 0;
     overflow: hidden;
-    transition: background-color 1s;
     
 }
 nav ul li a {
@@ -75,8 +83,6 @@ nav ul li a {
 
 nav a:hover {
     color: white;
-    background-color: var(--secondary-color);
-    border-top: 3px var(--primary-color);
     
 }
 
@@ -112,7 +118,7 @@ header h1{
 }
 
 h2{
-    font-family:  var(--paragraph-font);
+    font-family:  var(--heading-font);
     color: var(--accent1-color);
     font-size: 6em;
     padding: 1%;
@@ -211,6 +217,7 @@ picture{
 .weatherSec h2{
     text-align: center;
     color:white;
+    font-family: var(--paragraph-font);
 }
 
 .weather{
@@ -296,6 +303,7 @@ picture{
 .rentalSec h2{
     color: white;
     text-align: center;
+    font-family: var(--paragraph-font);
 }
 
 .rentalSummary  a{
@@ -320,6 +328,7 @@ picture{
     font-size: 2em;
     margin: 20px;
     color: white;
+    font-family: var(--paragraph-font);
 }
 
 .typeRental h3{
@@ -377,6 +386,7 @@ picture{
 
 .ph-contact h2{
     padding: 3% 0 2% 2%;
+    font-family: var(--paragraph-font);
     
 }
    
@@ -416,11 +426,13 @@ td {
 .prices {
     display: block;
     text-align: center;    
+  
     
 }
 
 .prices h2{
     margin-top: 2%;
+    font-family: var(--paragraph-font);
 }
 
 .prices img{
@@ -493,7 +505,7 @@ li{
 }
 /* -----FORM------ */
 form fieldset{
-    margin: 2rem 1rem;
+    margin: 1rem 1rem;
     border: 3px solid var(--primary-color);
     border-radius: 10px;
     padding: .5rem 2%;
@@ -503,7 +515,7 @@ form legend{
     color: var(--accent1-color);
     margin: 0 1rem;
     padding: 0 .5rem;
-    font-family: var(--heading-font);
+    font-family: var(--paragraph-font);
     font-size: 2rem;
 
 }

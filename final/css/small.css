@@ -50,7 +50,8 @@ nav ul li a.active{
 
 }
 nav ul li a:hover{
-    background-color: rgba(217, 152, 115, 5);
+    
+    color: var(--primary-color);
 }
 
 nav ul.hide{
@@ -99,7 +100,7 @@ p{
     background-color: var(--primary-color);
     color: white;
     font-family: var(--paragraph-font);
-    font-size: 3em;
+    font-size: 2em;
     border-radius: 20px;
    
 }
@@ -279,7 +280,11 @@ footer{
 }
 
 .dolphin button{
-    
+    margin: 3% 0 1% 0;
+    padding: 3% 4%;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--paragraph-font);
     font-size: 3em;
     width: 40%;
     border-radius: 50px;
@@ -292,7 +297,6 @@ footer{
 
 /*form*/
 form fieldset{
-    margin: 2rem 2%;
     border: 3px solid var(--primary-color);
     border-radius: 10px;
     padding: 1rem 2%;
@@ -303,7 +307,6 @@ form legend{
     color: var(--accent1-color);
     margin: 0 1rem;
     padding: 0 .5rem;
-    font-family: var(--heading-font);
     font-size: 4rem;
 
 }
