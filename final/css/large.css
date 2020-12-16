@@ -48,6 +48,10 @@
         font-size: 2em;
     }
 
+    p{
+        font-size: 1em;
+    }
+
     header h1{
         font-family: 'Fredoka One', cursive;
         color:var(--secondary-color);
@@ -77,6 +81,32 @@
         padding: 1rem;
     }
 
+    .days {
+        display: block;
+        padding: 10px 0;
+        font-size: 1.5em;
+        color:var(--accent1-color);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    
+    .forecastTable{
+        padding-bottom: 5%;
+        background-color: white;
+        border-radius: 50%;
+    }
+    
+    #forecastDay1, #forecastDay2, #forecastDay3{
+        font-size: 1.3em;
+    }
+    
+    #icon1, #icon2, #icon3{
+        margin-top: 5%;
+        width: 45%;
+    }
+
     .article{
         border: 1px solid var(--accent1-color);
         padding: 2%;
@@ -102,6 +132,8 @@
        
         max-width: 25px;;
     }
+
+    
 
     /*contact information*/
     .sns {
@@ -131,6 +163,14 @@
 
 .dolphin p{
     font-size: 1.2em;
+}
+
+.dolphin h3{
+    font-size: 2em;
+}
+
+.center{
+    font-size: 3em;
 }
 
 /*AREA INFORMATION*/

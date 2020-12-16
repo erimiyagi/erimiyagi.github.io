@@ -62,13 +62,17 @@ header img{
 }
 
 h1{
-    font-size: 2em;
+    font-size: 4em;
     padding-left: 2% ;
 
 }
 
 h2{
     font-size: 3em;
+}
+
+p{
+    font-size: 2em;
 }
 
 .herodiv img{
@@ -95,6 +99,33 @@ h2{
 .forecast h2{
     display: flex;
     text-align: center;
+}
+
+
+.days {
+    display: block;
+    padding: 10px 0;
+    font-size: 3em;
+    color:var(--accent1-color);
+    border-radius: 60%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.forecastTable{
+    padding-bottom: 5%;
+    background-color: white;
+    border-radius: 60%;
+}
+
+#forecastDay1, #forecastDay2, #forecastDay3{
+    font-size: 3em;
+}
+
+#icon1, #icon2, #icon3{
+    margin-top: 5%;
+    width: 45%;
 }
 
 .article{
@@ -190,8 +221,18 @@ footer{
 /*tours page*/
 
 .dolphin p{
-    font-size: 2em;
+    font-size: 3em;
 }
+
+.dolphin h3{
+    font-size: 4em;
+}
+
+.center{
+    font-size: 5em;
+}
+
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

@@ -246,20 +246,30 @@ header{
     text-align: center;
 }
 
-.mon, .tue, .wed, .thu, .fri {
+.days {
     display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.4em;
-    background:var(--accent1-color);
-    color:white;
-    border-bottom: 1px solid var(--accent1-color);
-    font-weight: 800;
+    padding: 10px 0;
+    font-size: 1.5em;
+    color:var(--accent1-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
 }
 
 .forecastTable{
     padding-bottom: 5%;
     background-color: white;
+    border-radius: 50%;
+}
+
+#forecastDay1, #forecastDay2, #forecastDay3{
+    font-size: 1.3em;
+}
+
+#icon1, #icon2, #icon3{
+    margin-top: 5%;
+    width: 45%;
 }
 
 
