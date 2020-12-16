@@ -6,7 +6,7 @@
     --primary-color: #735755; 
     --secondary-color: #6BB0BF; 
     --accent1-color: #D99873; 
-    --accent2-color: #; 
+   
 
     --heading-font: 'Cormorant Upright', serif;
     --paragraph-font: 'Mulish', sans-serif;
@@ -349,7 +349,7 @@ picture{
     
 }
 
-.summary button{
+.summary input {
     margin: 3% 0 0 0;
     padding: 2% 4%;
     background-color: var(--primary-color);
@@ -376,7 +376,11 @@ picture{
 /*contact information*/
 
 .information p{
-    font-size: 1.5em;
+    font-size: 1.1em;
+}
+
+.information{
+    margin:1%;
 }
 
 .map iframe{
@@ -387,7 +391,9 @@ picture{
 }
 .ph-contact{
     border: 2px solid var(--primary-color);
-    margin:5% ;
+    margin:2% ;
+    height: 450px;
+    padding: 0 2%;
     
 }
 
@@ -396,6 +402,8 @@ picture{
     font-family: var(--paragraph-font);
     
 }
+
+
    
 .sns{
     margin: 0 auto;
@@ -478,11 +486,14 @@ td {
 
 footer{
     background-color: var( --primary-color) ;
-    padding: 0.3em;
+    padding: 0.8em;
     text-align: center;
     font-family: var(--paragraph-font);
     color: white;
+
 }
+
+
 
 
 
@@ -529,7 +540,7 @@ form legend{
 form label.top, form{
     display: block;
     padding: 1rem 0;
-    color: var(--accent1-color);
+    color: black;
     font-size: 1rem;
     font-family: var(--paragraph-font);
 }
@@ -548,7 +559,7 @@ form label.top input, form label.top select{
 form label.sbs{
     display: block;
     padding: .5rem;
-    color: var(--accent1-color);
+    color: black;
     font-size: 1.2em;
 }
 
@@ -593,7 +604,7 @@ form textarea{
 }
 
 /* -----THANKS PAGE----- */
-.thanksBtn button{
+.thanksBtn input{
     border: none;
     background: var(--accent1-color);
     color: white;
@@ -611,14 +622,14 @@ form textarea{
     margin: 2%;
 }
 
-.thanksBtn button a:visited{
+.thanksBtn input a:visited{
     color: white;
 }
 
-.thanksBtn button a{
+.thanksBtn input a{
     text-decoration: none;    
 }
-.thanksBtn button:hover{
+.thanksBtn input:hover{
     background-color: var(--secondary-color);
 }
 
@@ -663,7 +674,7 @@ form textarea{
     margin-top: 2%;
 }
 
-.dolphin button{
+.dolphin input{
     margin: 3% 0 1% 0;
     padding: 3% 4%;
     background-color: var(--primary-color);
@@ -697,6 +708,11 @@ form textarea{
 .contactP{
     background-color: var(--primary-color);
     color: white;
+}
+
+.contactP h3{
+    color: white;
+    font-size: 1em;
 }
 
 .contactP form fieldset{

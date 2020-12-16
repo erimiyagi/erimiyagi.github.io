@@ -99,12 +99,11 @@
                 <input type="text" name="cruiseLineName" pattern="[a-zA-Z].{5,}" placeholder="ex. The cruise line name if you are taking">
             </label>
             <label class="sbs">Agreement<br>
-                <ul>
-                    <li>Reservations rate requires 24 hour prior notification</li>
-                    <li>A $50 security deposit is required to confirm reservations</li>
-                    <li>A valid drivers license is required in hand at time of rental</li>
-                </ul>
                 
+                    Reservations rate requires 24 hour prior notification<br>
+                    A $50 security deposit is required to confirm reservations<br>
+                    A valid drivers license is required in hand at time of rental<br>
+               
 
                 <input type="radio" name="dangerLevel" value="yes" required>
                 Agree
@@ -115,17 +114,22 @@
         <fieldset>
             <legend>Payment Information</legend>
     
-            <label class="sbs">Payment Methods<br>
-            
-                <input type="radio" name="dangerLevel" value="yes" >
-                <div class="payment">Credit or debit card<br></div>
-                <input type="radio" name="dangerLevel" value="yes" class="payment">
-                <div class="payment">Google Pay</div><br>
-                <input type="radio" name="dangerLevel" value="yes" class="payment">
-                <div class="payment">Paypal</div><br>
-                <input type="radio" name="dangerLevel" value="yes" class="payment">
-                <div class="payment">Cash</div>
-            </label>
+                <label class="sbs">Payment Methods<br>
+                <input type="radio" name="payment" value="payment" >
+                Credit or debit card<br>
+                </label>
+                <label class="sbs">
+                <input type="radio" name="payment" value="payment" >
+                Google Pay<br>
+                </label>
+                <label class="sbs">
+                <input type="radio" name="payment" value="payment" >
+                Paypal<br>
+                </label>
+                <label class="sbs">
+                <input type="radio" name="payment" value="payment" >
+                Cash
+                </label>
             <label class="top">Card Number
                 <input type="text" name="cardNumber" pattern="[0-9].{12,}" required>
             </label>
@@ -153,7 +157,7 @@
 
 <footer>
     <p> &copy; 2020 | Eri Miyagi | Tokyo | 
-    <a href="https://www.byui.edu/online">BYU Online Learning</a>
+    <a href="https://www.byui.edu/online"> BYU Online Learning</a> | <a href="/final/resources.html">Resource Page</a>
     </p>
     <div id="lastModified"></div>
 

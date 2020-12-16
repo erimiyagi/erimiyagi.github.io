@@ -18,7 +18,11 @@
     
     }
 
-    
+    header img{
+        margin:2%;
+        max-width: 20%;
+    width: 20%;
+    }
     
     
 
@@ -71,6 +75,10 @@
 .ph-contact h2{
     padding: 3% 0 2% 2%;
     font-size: 3em;
+}
+
+.information p {
+    font-size: 1.2em;
 }
 
 

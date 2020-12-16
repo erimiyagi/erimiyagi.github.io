@@ -40,6 +40,7 @@
     header img{
         width: 12%;
         max-width: 20%;
+        margin:0;
     }
     
 
@@ -184,39 +185,47 @@
 
 
     .map img{
-        width: 200px;
+        width: 80px;
         max-width: 200px;;
         padding-left: 2%;
         margin: 0 auto;
      
        
     }
-    .information img{
-       
-        max-width: 25px;;
-    }
+    
 
     
 
     /*contact information*/
 
-    .information p{
+    .information p {
         font-size: 1.3em;
     }
     .sns {
-        width: 50%;
+        width: 30%;
         
         
     }
 
+   
+
     .sns img{
-        margin: 0 auto;
-        
+      
+        margin: 2%;
+        padding: 1%;
+        float: right;
     }
 
     .ph-contact h2{
         padding: 3% 0 2% 2%;
         font-size: 2em;
+    }
+
+    .ph-contact{
+
+        height: 450px;
+       
+        
     }
 
 
@@ -292,7 +301,6 @@ form legend{
 form label.top, form{
     display: block;
     padding: 1rem 0;
-    color: var(--accent1-color);
     font-size: 1rem;
     font-family: var(--paragraph-font);
 }
@@ -311,7 +319,6 @@ form label.top input, form label.top select{
 form label.sbs{
     display: block;
     padding: .5rem;
-    color: var(--accent1-color);
     font-size: 1.2em;
 }
 
@@ -373,5 +380,8 @@ form textarea{
    
 }
     
+#lastModified{
+    font-size: 1.2em;
+}
 
 } /*end large */
