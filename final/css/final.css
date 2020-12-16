@@ -1,0 +1,613 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Mulish:wght@300&display=swap');
+
+:root{
+    --primary-color: #735755; 
+    --secondary-color: #6BB0BF; 
+    --accent1-color: #D99873; 
+    --accent2-color: #; 
+
+    --heading-font: 'Cormorant Upright', serif;
+    --paragraph-font: 'Mulish', sans-serif;
+}
+
+
+html {
+    background-color: var( --accent2-color);
+    margin: 0 auto;   
+}
+
+body {
+    max-width: 1300px;
+    background-color: white ;
+    margin: 0 auto;  
+    width: 1300px;     
+}
+
+main {
+	display: grid;
+    grid-template-columns: 1fr;
+    padding: 0%;
+
+}
+
+header img{
+    max-width: 12%;
+    float: left;
+    margin: 2% 3%;
+    width: 10%
+
+    
+}
+
+nav button{
+    text-align: right;
+    margin: auto;
+}
+
+nav{
+    background-color: white;
+    text-align: center;
+    padding-left: 10%;
+    
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    
+}
+nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0.8rem;
+	text-decoration: none;
+    font-size: 1.3rem;
+    font-family: var(--paragraph-font);
+}
+
+nav a:hover {
+    color: var( --accent2-color);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+    
+}
+
+nav a:active{
+    background-color: var(--accent2-color);
+    color: white;
+    
+}
+
+.activeB a{
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+
+section h2{
+    color: var(--secondary-color);
+}
+
+h1{
+    font-family:  var(--heading-font);
+    font-size: 1em;
+    color:var(--accent1-color);
+
+
+}
+
+header h1{
+    font-family: var(--heading-font);
+    color:var(--secondary-color);
+    font-size: 3em;
+    
+}
+
+h2{
+    font-family:  var(--paragraph-font);
+    color: var(--accent1-color);
+    font-size: 6em;
+    padding: 1%;
+    padding-left:2%;
+}
+
+h3{
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    font-size:2em;
+
+
+
+}
+
+p{
+    font-family: var(--paragraph-font);
+    font-size:1em;
+
+
+}
+
+header h2{
+    font-size: 1.5em;
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    margin-top: -2%;
+    margin-bottom: 3%;
+}
+
+.h2{
+    color: var(--accent2-color);
+
+}
+
+
+h2 a{
+    color: black;
+}
+
+.lnk {
+    color: black;
+}
+
+ img {
+    width:30%;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color:white; 
+    padding: 0.2em;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    
+
+}
+
+/*hero image and summary*/
+.herodiv {
+    
+    position: relative;
+    text-align: center;
+}
+.herodiv h1, h2, p {
+    margin: 0;
+}
+
+.herodiv img{
+    
+    background-size: cover;
+    top: 5%;
+
+    
+}
+
+.hero-image{
+    width: 100%;
+}
+
+
+/*weather info*/
+
+.weatherSec{
+    background-color: var(--secondary-color);
+    padding: 4%;
+}
+
+.weatherSec h2{
+    text-align: center;
+    color:white;
+}
+
+.weather{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5em;
+
+}
+
+.weather h3{
+    margin: 10px 0px;
+    color: white;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.summary {
+	position: absolute;
+    text-align: center;
+    
+}
+.summary p{
+    font-size: 1.5em;
+}
+
+/*3days*/
+
+.ph-forecast{
+    padding: 2%;
+}
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+}
+
+.day-table {
+    padding: 0;
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+.mon, .tue, .wed, .thu, .fri {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    background:var(--accent1-color);
+    color:white;
+    border-bottom: 1px solid var(--accent1-color);
+    font-weight: 800;
+}
+
+.forecastTable{
+    padding-bottom: 5%;
+    background-color: white;
+}
+
+
+/*rental type information*/
+
+.rentalSummary  a{
+    color: var(--accent1-color);
+
+}
+
+.rentalSummary a:visited {
+    color: var(--accent1-color);
+
+}
+.typeRental {
+    text-align: center;
+    width: 100%;
+    border: 2px solid var(--accent1-color);
+    background-color: var(--accent1-color) ;
+    padding: 2%;
+    margin: 0 auto;
+}
+.typeRental h2{
+    font-size: 2em;
+    margin: 10px;
+    color: white;
+}
+
+.typeRental h3{
+    font-size: 1.5em;
+    margin: 10px;
+    color: white;
+}
+
+.typeRental button{
+    margin: 3% 0 0 0;
+    padding: 1%;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 1.3em;
+   
+}
+
+.typeRental a{
+    color: white;
+    text-decoration: none;
+}
+
+.typeRental a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+/*event*/
+.ph-article{
+    padding: 2%;
+}
+
+.article{
+    border: 1px solid var(--accent1-color);
+    padding: 2%;
+    min-height: 230px;
+    
+}
+
+.article-img img{
+    float: right;
+    min-width: 30%;
+}
+
+.ph-event{
+    background-color: var(--secondary-color);
+    margin:5% 2%;
+    padding: 2%;
+    
+}
+
+.ph-event h2{
+    text-align: center;
+    color: white;
+}
+
+
+.towns{
+    font-size: 1.5em;
+    
+}
+
+/*contact information*/
+
+.map iframe{
+    width: 50%;
+    float: left;
+    margin-bottom: 2%;
+    
+}
+.ph-contact{
+    border: 2px solid var(--primary-color);
+    margin:5% ;
+    
+}
+
+.ph-contact h2{
+    padding: 3% 0 2% 2%;
+    
+}
+   
+.sns{
+    margin: 0 auto;
+}
+
+.sns img{
+    width: 20%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    padding: 1%;
+}
+
+th{
+    color: white;
+}
+td {
+    height: 50px;
+    text-align: center;
+    font-family: var(--paragraph-font);
+
+}
+
+
+footer{
+    background-color: var( --primary-color) ;
+    padding: 0.3em;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+
+
+.lnk a:link, .lnk a:visited {
+    color: black;
+}
+
+footer a:link, footer a:visited {
+    color: white;
+}
+
+li{
+    font-family: var(--paragraph-font) ;
+}
+
+
+.contentbox{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #ccc;
+    color: #444;
+    font-family: var(--paragraph-font);
+    
+
+}
+/* -----FORM------ */
+form fieldset{
+    margin: 2rem 0;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+
+}
+form legend{
+    color: var(--accent1-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+
+}
+form label.top, form{
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent1-color);
+    font-size: 1rem;
+    font-family: var(--paragraph-font);
+}
+
+form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 20rem;
+    background: var(--accent2-color);
+}
+
+form label.sbs{
+    display: block;
+    padding: .5rem;
+    color: var(--accent1-color);
+}
+
+form input.submitBtn{
+    border: none;
+    background: var(--accent1-color);
+    color: white;
+    padding: 1rem 2rem ;
+    border-radius: 20px;
+    margin: 0 0 2rem 1%;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 1.3em;
+    
+}
+
+form label.top input:required{
+    border-left: 7px solid var(--secondary-color);
+}
+
+form label.top input:required:valid{
+    border-left: 7px solid var(--accent1-color);
+}
+
+
+
+form textarea{
+    width:100%;
+    padding:2%;
+    
+    
+}
+
+/* -----THANKS PAGE----- */
+.thanks p{
+    color: var(--accent1-color);
+    padding:1rem;
+    
+}
+.thanks{
+    text-align: center;
+    margin: 3rem;;
+}
+
+/*wireframe*/
+.wireframe a{
+    margin-left: 2%;
+}
+
+.wireframe{
+    margin-bottom: 30px;
+}
+
+/*AREA INFORMATION*/
+.cards{
+ 
+    gap: 1em;
+    margin: 20px 1% 0 0;
+    background-color: var(--accent1-color);
+    padding: 1%;
+
+}
+
+.card{
+    padding: 2%;
+    background-color: white;
+
+}
+
+.card h3{
+    color: var(--secondary-color);
+}
+
+.card h4{
+    font-weight: 700;
+    font-family: var(--paragraph-font);
+}
+
+.areainfo h2{
+    margin-top: 4%;
+}
+
+
+
+
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	/* Horizontal Menu Examples */
+	/* Flex *********************/
+	/*	nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }
+	*/
+
+	/* Grid *********************/
+			nav ul { 
+				display: flex;
+				/*grid-template-columns: repeat(5, 1fr);*/
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                padding: 1%;
+                
+                
+            }
+            
+            nav ul li { flex: 1 1 100%; }
+
+	/* Inline-Block             */
+	/*
+			nav li {display: inline-block;}
+	*/
+
+	/* Float                    */
+	/*
+			nav li {float:left; margin-right:15px;}
+			main {clear:both;}
+	*/
+
+/*******************************************************/
+	
+	nav a {
+		font-size: 1rem;
+	}
+	
+	
+	
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+

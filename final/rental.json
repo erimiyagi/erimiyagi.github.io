@@ -1,0 +1,54 @@
+{
+    "rental": [
+      {
+        "name": "Honda Metro Scooter",
+        "max": "1",
+        "half": "$20",
+        "full": "$30",
+        "walkinHalf":"$30",
+        "walkinFull": "$35"
+      },
+      {
+        "name": "Honda Dio Scooter",
+        "max": "2",
+        "half": "$30",
+        "full": "$40",
+        "walkinHalf":"$35",
+        "walkinFull": "$45"
+      },
+      {
+        "name": "Honda PCX150 Scooter",
+        "max": "2",
+        "half": "$40",
+        "full": "$50",
+        "walkinHalf":"$45",
+        "walkinFull": "$55"
+      },
+      {
+        "name": "Honda Pioneer ATV",
+        "max": "4",
+        "half": "$50",
+        "full": "$70",
+        "walkinHalf":"$60",
+        "walkinFull": "$80"
+      },
+      {
+        "name": "Jeep Wrangler - 4 door with a/c",
+        "max": "5",
+        "half": "$70",
+        "full": "$100",
+        "walkinHalf":"$85",
+        "walkinFull": "$125"
+      },
+      {
+        "name": "Jeep Wrangler - 2 door",
+        "max": "4",
+        "half": "$60",
+        "full": "$85",
+        "walkinHalf":"$70",
+        "walkinFull": "$90"
+      }
+
+    ]
+}
+     
