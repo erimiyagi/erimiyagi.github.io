@@ -16,7 +16,7 @@
         "full": "$40",
         "walkinHalf":"$35",
         "walkinFull": "$45",
-        "imageurl": "https://erimiyagi.github.io/final/images/metro-scooter.jpg"
+        "imageurl": "https://erimiyagi.github.io/final/images/dio-scooter.jpg"
       },
       {
         "name": "Honda PCX150 Scooter",
@@ -25,7 +25,7 @@
         "full": "$50",
         "walkinHalf":"$45",
         "walkinFull": "$55",
-        "imageurl": "https://erimiyagi.github.io/final/images/metro-scooter.jpg"
+        "imageurl": "https://erimiyagi.github.io/final/images/pcx150-scooter.jpg"
       },
       {
         "name": "Honda Pioneer ATV",
@@ -34,7 +34,7 @@
         "full": "$70",
         "walkinHalf":"$60",
         "walkinFull": "$80",
-        "imageurl": "https://erimiyagi.github.io/final/images/metro-scooter.jpg"
+        "imageurl": "https://erimiyagi.github.io/final/images/pioneer-scooter.jpg"
       },
       {
         "name": "Jeep Wrangler - 4 door with a/c",
@@ -43,7 +43,7 @@
         "full": "$100",
         "walkinHalf":"$85",
         "walkinFull": "$125",
-        "imageurl": "https://erimiyagi.github.io/final/images/metro-scooter.jpg"
+        "imageurl": "https://erimiyagi.github.io/final/images/4door.jpg"
       },
       {
         "name": "Jeep Wrangler - 2 door",
@@ -52,7 +52,7 @@
         "full": "$85",
         "walkinHalf":"$70",
         "walkinFull": "$90",
-        "imageurl": "https://erimiyagi.github.io/final/images/metro-scooter.jpg"
+        "imageurl": "https://erimiyagi.github.io/final/images/2door.jpg"
       }
 
     ]
