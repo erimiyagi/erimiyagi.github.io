@@ -68,6 +68,35 @@
         
     }
 
+/*rental summary*/
+.typeRental button{
+    margin: 3% 0 0 0;
+    padding: 1% 2%;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 1.3em;
+    border-radius: 20px;
+   
+}
+
+.typeRental h2{
+    font-size: 2em;
+    margin: 10px;
+    color: white;
+}
+
+.typeRental h3{
+    font-size: 1.5em;
+    margin-top: 40px;
+    color: white;
+}
+
+.typeRental p{
+    font-size: 1.3em;
+    margin: 10px;
+}
+
 /*weather*/
     .weather{
         display: grid;
@@ -76,9 +105,17 @@
     
     }
 
+    .weather h3{
+        font-size: 1.5em;
+    }
+
     .summary {
         position: static;
         padding: 1rem;
+    }
+
+    .summary p{
+        font-size: 1.3em;
     }
 
     .days {
@@ -136,6 +173,10 @@
     
 
     /*contact information*/
+
+    .information p{
+        font-size: 1.3em;
+    }
     .sns {
         width: 50%;
         
@@ -145,6 +186,11 @@
     .sns img{
         margin: 0 auto;
         
+    }
+
+    .ph-contact h2{
+        padding: 3% 0 2% 2%;
+        font-size: 2em;
     }
 
 
