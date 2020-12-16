@@ -21,9 +21,13 @@
     padding: 2%;
     min-height: 230px;
     
-}
+ }
  
-
+/*rental summary*/
+.typeRental{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
 .article-img img{
     float: right;
     width: 30%;

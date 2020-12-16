@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoot Homepage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/final/css/final.css">
+    <link rel="stylesheet" href="/final/css/small.css">
+    <link rel="stylesheet" href="/final/css/medium.css">
+    <link rel="stylesheet" href="/final/css/large.css">
+    <link rel="stylesheet" href="/final/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+    <header>
+        <div class="headerlogo">
+        <img src="/final/images/scoot-logo.png" alt="logo"></div>
+       
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li>
+                    <a href="/final/index.html">home</a>
+                </li>
+                <li>
+                    <a href="/final/rentals.html">rentals</a>
+                </li>
+                <li>
+                    <a href="/final/reservation.html">reservation</a>
+                </li>
+                <li>
+                    <a href="/final/tours.html">tours</a>
+                </li>
+                <li  class="activeB">
+                    <a href="#">contact</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    
+
+<main class="clearfix">
+   
+
+    <h2>Contact Us</h2>
+    <div class="contactP">
+
+        <form action="thanks.html">
+            <fieldset>
+                <legend></legend>
+                <label class="top">Full Name*
+                    <input type="text" name="fullName" pattern="[a-zA-Z].{5,}" required>
+                </label>
+                <label class="top">Email*
+                    <input type="email" name="email" placeholder="someone@email.com" required>
+                </label>
+            
+                    <legend>Concerns or Comments</legend>
+                    <label>
+                        <textarea name="comment" placeholder="Anything you would like to ask"></textarea>
+                    </label>
+                
+                <input type="submit" value="Contact Us" name="submitBtn" class="submitBtn">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="typeRental">
+        <h2>Rental Information and Services</h2>
+        
+        <h3>Security Deposit</h3>
+        <p>A $50 security deposit is required to confirm reservations</p>
+
+        <h3>Qualification</h3>
+        <p>A valid drivers license is required in hand at time of rental</p>
+
+        <h3>Available Age</h3>
+        <p>No one under 12 years of age are allowed to ride on the scooters</p>
+
+        <h3>Services</h3>
+        <p>Fuel charge not included</p>
+        <p>Unlimited mileage</p>
+        <p>Liability insurance is free of charge</p>
+        <p>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals</p>
+
+        <h3>How to Pay</h3>
+        <p>Payment via Google Pay, cash, credit card, debit card, or PayPal</p>
+
+        <h3>What to do</h3>
+        <p>Reservations rate requires 24 hour prior notification</p>
+        <p>Rentals may be returned to either location</p>
+    </div>
+
+     
+
+    <div class="ph-contact">
+        <h2>Contact Information</h2>
+
+        <table class="tbl-r02">
+            <tr>
+                <th><div class="map">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1BiFdV0yDzjeG6BWxka_0wbzHZCQv6_hJ&hl=ja" width="400" height="300"></iframe>                </div></th>
+
+                <td class="last">
+                    <div class="information">
+                        <div class="location">
+                        <p>Address1: Muelle, Playacar, 77400 Playa del Carmen, Q.R., Mexico</p>
+                        <p>Address2: Carretera Chankanaab km 4.5, Carretera Costera Sur, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                        </div>
+                        
+                        <div class="call">
+                        <p>Phone number: <a href="(123)456-7890">(123)456-7890</a></p>
+                        </div>
+                       
+                        <div class="email">
+                        <p>Email: <a href="scoot-cozumel-rental@gmail.com">scoot-cozumel-rental@gmail.com</a></p>
+                        </div>
+                     </div>
+                     <div class="sns">
+                        <a href="https://instagram.com " target="_blank"><img src="/final/images/instagram.png" alt="insta icon">
+                        <a href="https://facebook.com " target="_blank"><img src="/final/images/facebook.png" alt="facebook icon">
+                        <a href="https://twitter.com " target="_blank"><img src="/final/images/twitter.png" alt="twitter icon">
+                     </div></td>    
+        </table>
+        
+    </div> 
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+<footer>
+    <p> &copy; 2020 | Eri Miyagi | Tokyo | 
+    <a href="https://www.byui.edu/online">BYU Online Learning</a>
+    </p>
+    <div id="lastModified"></div>
+
+     <script src="/final/js/final.js"></script>
+     <script src="/final/js/weather1.js"></script>
+
+</footer>
+
+</body>
+
+
+</html>

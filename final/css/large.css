@@ -69,6 +69,11 @@
     }
 
 /*rental summary*/
+
+.typeRental{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 .typeRental button{
     margin: 3% 0 0 0;
     padding: 1% 2%;
@@ -82,7 +87,6 @@
 
 .typeRental h2{
     font-size: 2em;
-    margin: 10px;
     color: white;
 }
 
@@ -94,7 +98,25 @@
 
 .typeRental p{
     font-size: 1.3em;
-    margin: 10px;
+    margin: 5px;
+}
+
+.rentalSummary p{
+    margin: 20px;
+    
+}
+
+.summary button{
+    margin: 3% 0 0 0;
+    padding: 2% 4%;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 1.3em;
+    border-radius: 20px;
+    border: none;
+    width: 60%;
+   
 }
 
 /*weather*/
@@ -219,6 +241,12 @@
     font-size: 3em;
 }
 
+.dolphin button{
+    font-size: 1.5em;
+   
+    
+}
+
 /*AREA INFORMATION*/
 .cards{
     display: grid;
@@ -318,6 +346,22 @@ form textarea{
     padding:2%;
     
     
+}
+
+/*contact page*/
+.contactP form legend{
+    color: white;
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 1% 0;
+    font-size: 1.2em;
+}
+.contactP form label.top, form{
+
+    color: white;
+    font-size: 1.2em;
+
+   
 }
     
 

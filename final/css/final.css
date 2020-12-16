@@ -173,6 +173,11 @@ header{
 
 }
 
+picture{
+    margin:0;
+    padding:0;
+}
+
 /*hero image and summary*/
 .herodiv {
     
@@ -187,12 +192,12 @@ header{
     
     background-size: cover;
     top: 5%;
-
     
 }
 
 .hero-image{
     width: 100%;
+    
 }
 
 
@@ -229,6 +234,10 @@ header{
 .summary p{
     font-size: 1.5em;
 }
+.summary h3{
+    
+    margin-top: 0;
+}
 
 /*3days*/
 
@@ -238,6 +247,10 @@ header{
 .forecast {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+}
+
+.ph-forecast p{
+    text-align: center;
 }
 
 .day-table {
@@ -275,6 +288,16 @@ header{
 
 /*rental type information*/
 
+.rentalSec{
+    background-color: var(--accent1-color);
+    padding: 2%;
+}
+
+.rentalSec h2{
+    color: white;
+    text-align: center;
+}
+
 .rentalSummary  a{
     color: var(--accent1-color);
 
@@ -291,10 +314,11 @@ header{
     background-color: var(--accent1-color) ;
     padding: 2%;
     margin: 0 auto;
+    
 }
 .typeRental h2{
     font-size: 2em;
-    margin: 10px;
+    margin: 20px;
     color: white;
 }
 
@@ -303,24 +327,30 @@ header{
     margin: 10px;
     color: white;
 }
+.typeRental p{
+    
+    margin: 10px;
+    
+}
 
-.typeRental button{
+.summary button{
     margin: 3% 0 0 0;
-    padding: 1% 2%;
+    padding: 2% 4%;
     background-color: var(--primary-color);
     color: white;
     font-family: var(--paragraph-font);
     font-size: 1.3em;
     border-radius: 20px;
+    border: none;
    
 }
 
-.typeRental a{
+.summary a{
     color: white;
     text-decoration: none;
 }
 
-.typeRental a:visited{
+.summary a:visited{
     color: white;
     text-decoration: none;
 }
@@ -347,6 +377,7 @@ header{
 
 .ph-contact h2{
     padding: 3% 0 2% 2%;
+    
 }
    
 .sns{
@@ -614,13 +645,14 @@ form textarea{
 }
 
 .dolphin button{
-    margin: 3% 0 0 0;
-    padding: 2%;
+    margin: 3% 0 1% 0;
+    padding: 3% 4%;
     background-color: var(--primary-color);
     color: white;
     font-family: var(--paragraph-font);
     font-size: 1.3em;
     border-radius: 20px;
+    border: none;
     
 }
 
@@ -641,6 +673,50 @@ form textarea{
     color: white;
     text-decoration: none;
 }
+
+/*contact page*/
+.contactP{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contactP form fieldset{
+    border: none;
+
+}
+
+.contactP form legend{
+    color: white;
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 1% 0;
+    font-size: 1em;
+}
+.contactP form label.top, form{
+
+    color: white;
+    font-size: 1em;
+
+   
+}
+
+.contactP form label.top input, form label.top select{
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 40rem;
+    background: white;
+}
+
+.contactP form input.submitBtn{
+    margin-top: 30px;
+}
+
+.contactP textarea{
+    font-size: .8em;
+}
+
 
 /*AREA INFORMATION*/
 .cards{

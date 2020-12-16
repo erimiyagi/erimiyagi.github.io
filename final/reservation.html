@@ -119,13 +119,13 @@
             <label class="sbs">Payment Methods<br>
             
                 <input type="radio" name="dangerLevel" value="yes" >
-                Credit or debit card<br>
-                <input type="radio" name="dangerLevel" value="yes" >
-                Google Pay<br>
-                <input type="radio" name="dangerLevel" value="yes" >
-                Paypal<br>
-                <input type="radio" name="dangerLevel" value="yes" >
-                Cash
+                <div class="payment">Credit or debit card<br></div>
+                <input type="radio" name="dangerLevel" value="yes" class="payment">
+                <div class="payment">Google Pay</div><br>
+                <input type="radio" name="dangerLevel" value="yes" class="payment">
+                <div class="payment">Paypal</div><br>
+                <input type="radio" name="dangerLevel" value="yes" class="payment">
+                <div class="payment">Cash</div>
             </label>
             <label class="top">Card Number
                 <input type="text" name="cardNumber" pattern="[0-9].{12,}" required>
