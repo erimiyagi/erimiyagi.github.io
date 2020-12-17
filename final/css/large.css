@@ -79,7 +79,7 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
 }
-.typeRental button{
+.typeRental input{
     margin: 3% 0 0 0;
     padding: 1% 2%;
     background-color: var(--primary-color);
@@ -111,7 +111,7 @@
     
 }
 
-.summary button{
+.summary input{
     margin: 3% 0 0 0;
     padding: 2% 4%;
     background-color: var(--primary-color);
@@ -259,7 +259,7 @@
     font-size: 3em;
 }
 
-.dolphin button{
+.dolphin input{
     font-size: 1.5em;
    
     
